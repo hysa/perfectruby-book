@@ -27,7 +27,12 @@ for val in {a: 1, b: 2}
   puts val[1]
 end
 
-# loopはブロックじゃないのでスコープを作らない
+# loopはブロックじゃない(begin~end)のでスコープを作らない
 puts val
 
 
+# Integer#times
+2.times do
+  foo = 'test'
+  puts foo
+end
